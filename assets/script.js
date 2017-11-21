@@ -5,8 +5,10 @@
   	wordArray: ["kitten", "towel", "flower"],
   	displayArray: [],
   	guesses: [],
-  	computerChoice:
-  		wordArray[Math.floor(Math.random()*wordArray.length)],
+  	computerChoice: function() {
+  		wordArray[Math.floor(Math.random()*wordArray.length)];
+  		console.log(computerChoice);
+  	},
 
   	buildDisplayArray: function() {
   		for (var index = 0; i<wordArray.length; index++) {
@@ -19,6 +21,6 @@
 
   		}
   		};
-computerChoice();
-buildDisplayArray();
-updateScreen();
+gameLogic.computerChoice();
+gameLogic.buildDisplayArray();
+gameLogic.updateScreen();
