@@ -1,3 +1,5 @@
+ $(document).ready(function() {
+
  var gameLogic = {
 
     NumGuesses: 15;
@@ -6,21 +8,21 @@
   	wordArray: ["kitten", "towel", "flower"],
   	displayArray: [],
   	guesses: [],
-  	computerChoice: function {
-  		wordLibrary[Math.floor(Math.random()*wordArray.length)]},
+  	computerChoice: function() {
+  		wordArray[Math.floor(Math.random()*wordArray.length)],
+    },
 
-  	buildDisplayArray: function {
+  	buildDisplayArray: function() {
   		for (var index = 0; i<wordArray.length; index++) {
   			displayArray.push(" _ ");
+      }  
+    },
 
     onkeypress = function(){
       var GuessesLeft = NumGuesses--;
       alert(DecGuessesLeft + " Guesses left")
-
-    };  
-  		}
-  		},
-  };
+    }  
+};
 
   var EasyLogic {
     wordArray: ["dog","cat","fish","bird","cow","pig"];
@@ -29,3 +31,12 @@
     guesses: [];
   }
 
+  	updateScreen: function() {
+  		$("#answerDisplay").html(displayArray);
+  		}
+
+computerChoice();
+buildDisplayArray();
+updateScreen();
+
+});
