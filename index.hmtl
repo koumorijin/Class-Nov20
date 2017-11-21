@@ -12,17 +12,6 @@
 <script type="text/javascript">
 
 
-  var gameLogic = {
-  	wins: 0,
-  	losses: 0,
-  	wordArray: ["kitten", "towel", "flower"],
-  	displayArray: [],
-  	guesses: [],
-
-
-  };
-
-
 
 </script>
 </body>
