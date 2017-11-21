@@ -8,16 +8,18 @@
   	wordArray: ["kitten", "towel", "flower"],
   	displayArray: [],
   	guesses: [],
+  	singleWord: "",//this.wordArray,//[Math.floor(Math.random() * this.wordArray.length)],
+  	
   	computerChoice: function() {
-
-  		this.wordArray[Math.floor(Math.random()*this.wordArray.length)]
+  		this.singleWord = this.wordArray[Math.floor(Math.random() * this.wordArray.length)]
+  		//console.log(singleWord);
   	},
 
-
   	buildDisplayArray: function() {
-  		for (var index = 0; index<this.wordArray.length; index++) {
-  			displayArray.push(" _ ");
-      }  
+  		// for (var index = 0; index < this.singleWord.length; index++) {
+  		// 	this.displayArray[index] = " _ ";
+    //   	}
+    //   	console.log(this.displayArray);  
     },
 
     onkeydown: function(){
@@ -26,13 +28,14 @@
     }  
 };
 
+gameLogic.computerChoice();
+console.log(gameLogic.singleWord);
+gameLogic.buildDisplayArray();
   var EasyLogic = {
     wordArray: ["dog","cat","fish","bird","cow","pig"],
     NumGuesses: 30,
     displayArray: [],
     guesses: [],
-  
-
 
   	buildDisplayArray: function() {
   		for (var index = 0; index<this.wordArray.length; index++) {
@@ -40,15 +43,13 @@
   		}
     },
 
-
   	updateScreen: function() {
   		$("#answerDisplay").html(this.displayArray);
   	}
 	};
+
 gameLogic.computerChoice();
 
 EasyLogic.updateScreen();
-
-
 
 });
