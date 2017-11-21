@@ -6,18 +6,18 @@
   	displayArray: [],
   	guesses: [],
   	computerChoice: function() {
-  		wordArray[Math.floor(Math.random()*wordArray.length)];
-  		console.log(computerChoice);
+  		this.wordArray[Math.floor(Math.random()*this.wordArray.length)];
+  		console.log(this.computerChoice);
   	},
 
   	buildDisplayArray: function() {
-  		for (var index = 0; i<wordArray.length; index++) {
+  		for (var index = 0; index<this.wordArray.length; index++) {
   			displayArray.push(" _ ");
   		}
 
   		},
   	updateScreen: function() {
-  		$("#answerDisplay").html(displayArray);
+  		$("#answerDisplay").html(this.displayArray);
 
   		}
   		};
