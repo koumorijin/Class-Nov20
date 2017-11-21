@@ -9,9 +9,14 @@
   	displayArray: [],
   	guesses: [],
   	computerChoice: function() {
+<<<<<<< HEAD
 
   		wordArray[Math.floor(Math.random()*this.wordArray.length)]
     },
+=======
+  		this.wordArray[Math.floor(Math.random()*this.wordArray.length)]
+  	},
+>>>>>>> 517792fe900669489427118568f0afc5e673a816
 
   	buildDisplayArray: function() {
   		for (var index = 0; i<this.wordArray.length; index++) {
@@ -47,10 +52,17 @@
   		$("#answerDisplay").html(this.displayArray);
   	}
 
+<<<<<<< HEAD
+=======
+  		}
+
+  		};
+>>>>>>> 517792fe900669489427118568f0afc5e673a816
 gameLogic.computerChoice();
-gameLogic.buildDisplayArray();
+gameLogic.computerChoice();
 gameLogic.updateScreen();
 
+<<<<<<< HEAD
 
 
   		// $("#answerDisplay").html(this.displayArray);
@@ -62,3 +74,5 @@ gameLogic.buildDisplayArray();
 gameLogic.updateScreen();
 
 });
+=======
+>>>>>>> 517792fe900669489427118568f0afc5e673a816
