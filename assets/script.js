@@ -12,8 +12,8 @@
 
   	buildDisplayArray: function() {
   		for (var index = 0; index<this.wordArray.length; index++) {
-  			displayArray.push(" _ ");
-  		}
+  			this.displayArray.push(" _ ");
+  		};
 
   		},
   	updateScreen: function() {
