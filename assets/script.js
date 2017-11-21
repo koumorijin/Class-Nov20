@@ -6,8 +6,7 @@
   	displayArray: [],
   	guesses: [],
   	computerChoice: function() {
-  		this.wordArray[Math.floor(Math.random()*this.wordArray.length)];
-  		console.log(this.computerChoice);
+  		this.wordArray[Math.floor(Math.random()*this.wordArray.length)]
   	},
 
   	buildDisplayArray: function() {
@@ -20,7 +19,9 @@
   		$("#answerDisplay").html(this.displayArray);
 
   		}
+
   		};
 gameLogic.computerChoice();
-gameLogic.buildDisplayArray();
+gameLogic.computerChoice();
 gameLogic.updateScreen();
+
