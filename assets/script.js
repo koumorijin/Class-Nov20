@@ -5,18 +5,16 @@
   	wordArray: ["kitten", "towel", "flower"],
   	displayArray: [],
   	guesses: [],
-  	computerChoice: function {
-  		wordLibrary[Math.floor(Math.random()*wordArray.length)];
-  		console.log(computerChoice);
-  	},
+  	computerChoice:
+  		wordArray[Math.floor(Math.random()*wordArray.length)],
 
-  	buildDisplayArray: function {
+  	buildDisplayArray: function() {
   		for (var index = 0; i<wordArray.length; index++) {
   			displayArray.push(" _ ");
   		}
 
   		},
-  	updateScreen: function {
+  	updateScreen: function() {
   		$("#answerDisplay").html(displayArray);
 
   		}
